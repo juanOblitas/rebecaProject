@@ -2,7 +2,7 @@
 
 function weblizar_gl_customizer( $wp_customize ) {
 	wp_enqueue_style('customizr', WL_TEMPLATE_DIR_URI .'/css/customizr.css');
-	wp_enqueue_style('FA', WL_TEMPLATE_DIR_URI .'/css/font-awesome-4.7.0/css/font-awesome.min.css');
+	wp_enqueue_style('FA', WL_TEMPLATE_DIR_URI .'/css/font-awesome-5.4.2/css/font-awesome.min.css');
 	$ImageUrl1 = esc_url(get_template_directory_uri() ."/images/1.png");
 	$ImageUrl2 = esc_url(get_template_directory_uri() ."/images/2.png");
 	$ImageUrl3 = esc_url(get_template_directory_uri() ."/images/3.png");

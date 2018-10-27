@@ -72,34 +72,32 @@
     										<?php } if($wl_theme_options['whatsapp_link']!='') { ?>
     										<li class="linkedin" data-toggle="tooltip" data-placement="bottom" title="whatsapp"><a href="tel:<?php echo esc_attr($wl_theme_options['whatsapp_link']) ; ?>"><i class="fab fa-whatsapp"></i></a></li>
     										<?php } ?>
-    										
+
     									</ul>	
     								</div>
     								<?php } ?>
     							</div>
     							<!-- /Logo & Contact Info -->
     						</div>	
-    						
+
     					</div>	
     					<!-- /Header Section -->
     					<!-- Navigation  menus -->
     					<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="enigma_nav_top">
     						<span id="header_shadow"></span>
     						<div class="container navbar-container" >
-    							<nav class="navbar navbar-default " role="navigation">
+    							<nav class="navbar navbar-expand-lg navbar-light bg-light">
     								<div class="navbar-header">
-    									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-    										
-    										<span class="sr-only"><?php esc_html_e('Toggle navigation','enigma');?></span>
-    										<span class="icon-bar"></span>
-    										<span class="icon-bar"></span>
-    										<span class="icon-bar"></span>
+    									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+
+    										<span class="navbar-toggler-icon"><?php esc_html_e('','enigma');?></span>
     									</button>
     								</div>
-    								<div id="menu" class="collapse navbar-collapse ">	
+    								<div id="menu" class="collapse navbar-collapse">	
     									<?php wp_nav_menu( array(
     										'theme_location' => 'primary',
-    										'menu_class' => 'nav navbar-nav',
+    										'menu_class' => 'nav navbar-nav d-flex justify-content-around',
+    										'container_class' =>'col-3 col-sm-3 col-md-3 col-lg-12',
     										'fallback_cb' => 'weblizar_fallback_page_menu',
     										'walker' => new weblizar_nav_walker(),
     									)
@@ -107,9 +105,9 @@
     								</div>	
     							</nav>
     							<!-- Nav bootstrap -->
-    							<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    							<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     								<a class="navbar-brand" href="#">Navbar</a>
-    								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
     									<span class="navbar-toggler-icon"></span>
     								</button>
     								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -120,7 +118,7 @@
     										<a class="nav-item nav-link disabled" href="#">Disabled</a>
     									</div>
     								</div>
-    							</nav>
+    							</nav> -->
     							<!-- /Nav bootstrap -->
     						</div>
     					</div>
